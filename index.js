@@ -4,6 +4,7 @@ const app = express()
 // JSON-PARSER to hablder HTTP POST requests
 app.use(cors())
 app.use(express.json())
+app.use(express.static('dist'))
 let notes = [
     {
       id: "1",
